@@ -1,0 +1,13 @@
+<ion-content padding style="background-color: #242435;">
+  <div class="ion-padding" style="align-items: center;">
+    <div id="search">
+      <form (ngSubmit)="procurar()">
+        <h2>GitHub Search</h2>
+        <ion-item routerDirection='forward'>
+          <ion-input placeholder="Enter with your github username"  id="txtUser" [ngModelOptions]="{standalone: true}" [(ngModel)]="username" type="text">
+          </ion-input>
+        </ion-item>
+      </form>
+    </div>
+  </div>
+</ion-content>
